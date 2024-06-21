@@ -1,0 +1,43 @@
+<header>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link href="d:/software/bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+  <div
+    class="
+    d-flex
+    flex-column flex-md-row
+    align-items-center
+    pb-3
+    mb-4
+    border-bottom
+    "
+  >
+    <nav class="navbar navbar-expand">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse">
+          <div class="navbar-nav"  >
+            <a
+              routerLink="/home"
+              routerLinkActive="nav-active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              class="nav-link"
+              >Home</a
+            >
+            <a
+            routerLink="/manage"
+            routerLinkActive="nav-active"
+            class="nav-link"
+            >Manage</a
+          >
+          <th scope="col">   </th>
+
+            <!-- <button class="d-flex flex-md-row align-items-center" (click)="navigate()">Login</button> -->
+            <button class="login-margin" (click)="navigate()">Login</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+

@@ -1,0 +1,46 @@
+<form  (ngSubmit)="saveData()">
+  <div class="container">
+  <div class="mb-3">
+    <label for="job-id" class="form-label">
+      ID
+    </label>
+    <input id="job-id"
+          name="id"
+          type="number"
+          min="1"
+          class="form-control"
+          required
+          [(ngModel)]="id" />
+  </div>
+
+  <div class="mb-3">
+    <label for="job-name" class="form-label">
+         Job Name
+    </label>
+    <input  id="job-name"
+            name="job name"
+            class="form-control"
+            required
+            [(ngModel)]="jobname" />
+  </div>
+
+  <div class="mb-3">
+    <label for="job-description" class="form-label">
+         Job descripton
+    </label>
+    <input  id="job-description"
+            name="job description"
+            class="form-control"
+            required
+            [(ngModel)]="jobdescripton" />
+  </div>
+  <div class="text-center">
+    <button type="button" class ="btn btn-secondary"  (click)="close()">
+      Cancel
+    </button>
+
+    <button type ="submit" class="btn btn-primary ms-2">
+      Save
+    </button>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+
+<div class="container">
+<h2>Posted jobs</h2>
+<ul>
+  <!-- <li *ngFor="let item of data">{{ item.jobname }}</li> -->
+</ul>
+ <table class ="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Jobname</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor ="let record of data">
+      <td>
+        {{record.id}}
+      </td>
+      <td>
+        {{record.jobname}}
+      </td>
+      <td>
+        {{record.jobdescripton}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<!-- <h2>Records</h2>
+<ul>
+  <li *ngFor="let record of data">{{ record.id }} - {{ record.description }}</li>
+</ul> -->

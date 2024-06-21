@@ -1,0 +1,38 @@
+ <button type="button" class="btn btn-primary mb-3" (click)="createJob()">
+    Add new job
+  </button>
+
+  <table class ="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Jobname</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor ="let job of data">
+        <td>
+          {{job.id}}
+        </td>
+        <td>
+          {{job.jobname}}
+        </td>
+        <td>
+          {{job.jobdescripton}}
+        </td>
+        <td>
+          <button type="button" class="btn btn-secondary" (click)="editJob(job)">
+            Edit
+          </button>
+          <button type="button" class="btn btn-secondary" (click)="deleteJob(job)">
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
